@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .listaHome {
+            display: inline;
+            float: left;
+        }
+
+        .listaHome a {
+            text-decoration: none;
+            color: white;
+            font-size: 26px;
+            border-right: 3px solid rgb(255, 224, 207);
+            padding: 9px 10px 9px 10px;
+            display: block;
+        }
+
+        .listaHome a:hover {
+            background-color: rgb(255, 224, 207);
+            color: rgb(178, 126, 112);
+        }
+
+        .active {
+            background-color: rgb(255, 224, 207);
+            color: rgb(178, 126, 112);
+        }
+
+        #listaNav {
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            height: 100px;
+            background-color: rgb(178, 126, 112);
+        }
+
+        #contenedor {
+            position: relative;
+            display: inline;
+            float: left;
+        }
+
+        #menu {
+            position: absolute;
+            display: none;
+            width: 150px;
+        }
+
+        #menu a {
+            display: block;
+            background-color: rgb(212, 151, 134);
+            color: rgb(255, 241, 233);
+            text-decoration: none;
+            padding: 5px 0px 5px 0px;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            text-align: center;
+            box-shadow: 8px 8px 10px rgb(121, 105, 97);
+        }
+
+        #menu a:hover {
+            background-color: white;
+            color: rgb(131, 93, 82);
+            cursor: grab;
+        }
+
+        #contenedor:hover #menu {
+            display: block;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul id="listaNav">
+            <li class="listaHome active"><a href="#">Item 1</a></li>
+            <li class="listaHome"><a href="#">Item 2</a></li>
+            <li class="listaHome" id="contenedor">
+                <a href="#">Item 3</a>
+                <div id="menu">
+                    <a href="#">Item 1</a>
+                    <a href="#">Item 2</a>
+                    <a href="#">Item 3</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

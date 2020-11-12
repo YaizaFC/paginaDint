@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <style>
+        .caja {
+            float: left;
+            border: 1px solid black;
+            width: 30%;
+            padding: 5px;
+            margin: 8px;
+            text-align: center;
+            box-shadow: 8px 8px 10px rgb(15, 97, 0);
+        }
+
+        .caja img {
+            width: 100%;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+
+        .btnEdit {
+            width: 100%;
+            height: 40px;
+            font-size: 28px;
+            border: none;
+            background-color: white;
+            color: rgb(15, 97, 0);
+        }
+
+        .btnEdit:hover {
+            color: white;
+            background-color: rgb(15, 97, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Difference between display:none and visiblity: hidden</h3>
+    <p><strong>visibility:hidden</strong> hides the element, but it still takes up space in the layout.</p>
+    <p><strong>display:none</strong> removes the element from the document. It does not take up any space.</p>
+    <div class="caja" id="remove">
+        <span class="cajas">Box 1</span>
+        <img src="img/img_5terre.jpg">
+        <button class="btnEdit" onclick="remove()">Remove</button>
+    </div>
+    <div class="caja" id="visibility">
+        <span>Box 2</span>
+        <img src="img/img_lights.jpg">
+        <button class="btnEdit" onclick="visibility()">Hide</button>
+    </div>
+    <div class="caja">
+        <span>Box 3</span>
+        <img src="img/img_forest.jpg">
+        <button class="btnEdit" onclick="reset()">Reset All</button>
+    </div>
+
+    <script type="text/javascript">
+
+        function remove() {
+            document.getElementById("remove").style.display = "none";
+        }
+        function visibility() {
+            document.getElementById("visibility").style.visibility = "hidden";
+        }
+        function reset() {
+            document.getElementById("remove").style.display = "block";
+            document.getElementById("visibility").style.visibility = "visible";
+        }
+    </script>
+</body>
+
+</html>

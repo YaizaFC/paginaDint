@@ -1,0 +1,158 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        nav {
+            background-color: beige;
+            width: 100%;
+            height: 50px;
+        }
+
+        .listaHome {
+            float: left;
+            display: inline;
+        }
+
+        .listaHome a {
+            background-color: beige;
+            text-decoration: none;
+            color: black;
+            font-size: 22px;
+            margin-right: 10px;
+            display: block;
+            height: 48px;
+        }
+
+        .listaHome a:hover {
+            background-color: black;
+            color: beige;
+        }
+
+        #formularioBuscador {
+            float: right;
+
+        }
+
+        span#buscador {
+            height: 60px;
+            margin: 0px;
+        }
+
+        #btnBuscar {
+            border: 0px;
+            background-color: rgb(197, 197, 172);
+            padding: 10px;
+        }
+
+        .material-icons.md-20 {
+            font-size: 20px;
+            padding-top: 8px;
+            margin-right: 10px;
+            margin-top: 4px;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: rgb(132, 206, 255) !important;
+        }
+
+        footer {
+            background-color: beige;
+            margin-top: 540px;
+            height: 30px;
+            text-align: center;
+            padding: 20px;
+            position: sticky;
+        }
+
+        .paginacion a {
+            background-color: white;
+            font-size: 20px;
+            padding: 5px 10px 5px 10px;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        .paginacion a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .ancla {
+            height: 40px;
+            width: 40px;
+            background-color: turquoise;
+            font-size: 40px;
+            border: 2px solid black;
+            border-radius: 40px;
+            box-shadow: 2px 5px 5px blue;
+            text-align: center;
+        }
+
+        .ancla a {
+            color: black;
+        }
+
+        .ancla:hover {
+            background-color: black;
+            box-shadow: 2px 5px 5px rgb(0, 238, 255);
+        }
+
+        .ancla:hover a {
+            color: yellow;
+
+        }
+
+        .ancla i {
+            padding-top: 7px;
+        }
+
+        main {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="listaHome active">
+                <a href="#" class="active"><span class="material-icons md-20">home</span>Home</a></li>
+            <li class="listaHome"><a href="#"><span class="material-icons md-20">contact_support</span>About</a></li>
+            <li class="listaHome"><a href="#"><span class="material-icons md-20">call</span>Contact</a></li>
+        </ul>
+
+        <div id="formularioBuscador">
+            <form action="">
+
+                <span id="buscador"><input type="text" placeholder="Search.." size="25px"></span>
+                <button id="btnBuscar" type="submit"><span class="material-icons">search</span></button>
+
+            </form>
+        </div>
+
+    </nav>
+    <main>
+        <div class="ancla">
+            <a href=""><i class="material-icons">anchor</i></a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="paginacion">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </footer>
+</body>
+
+</html>

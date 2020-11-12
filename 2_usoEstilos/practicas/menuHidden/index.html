@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-size: 30px;
+            font-family: 'Quicksand', sans-serif;
+        }
+        #contenedor{
+            position: relative;
+            width: 160px;
+        }
+
+        #contenedor button{
+            border: none;
+            background-color: rgb(178, 126, 112);
+            color: rgb(255, 224, 207);
+            width: 160px;
+            padding: 5px 0px 5px 0px;
+            border-left: 10px solid rgb(131, 93, 82);
+            /*height: 30px;*/
+        }
+
+        #menu{
+            position: absolute;
+            display: none;
+            left: 10px;
+            width: 150px;
+        }
+
+        #menu a{
+            display: block;
+            background-color: rgb(212, 151, 134);
+            color: rgb(255, 241, 233);
+            text-decoration: none;
+            padding: 5px 0px 5px 0px;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            text-align: center;
+            box-shadow: 8px 8px 10px rgb(121, 105, 97);
+        }
+        #menu a:hover{
+            background-color: white;
+            color: rgb(131, 93, 82);
+            cursor: grab;
+        }
+        #contenedor:hover #menu{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="contenedor">
+        <button>Menu</button>
+        <div id="menu">
+            <a href="#">Item 1</a>
+            <a href="#">Item 2</a>
+            <a href="#">Item 3</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
