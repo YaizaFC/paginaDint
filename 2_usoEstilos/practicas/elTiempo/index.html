@@ -1,27 +1,82 @@
 <html>
-    <head>
-        <style>
-            .titulo{
-                font-size: 30px;
-                width: 100%;
-            }
-            .info{
-                width: 30%;
-                font-size: 14px;
-            }
 
-        </style>
-    </head>
-    <body>
-        <div class="titulo"></div>
-        <div class="info"></div>
+<head>
+    <style>
+        body{
+            font-family: Roboto, Arial;
+        }
+        .principal{
+            padding: 15px;
+            margin: 10px;
+            border: 1px solid rgb(223, 223, 223);
+            box-shadow: 1px 1px 1px 2px rgb(192, 192, 192);
+        }
+        .titulo {
+            font-size: 30px;
+            width: 100%;
+        }
+
+        .info {
+            width: 30%;
+            font-size: 14px;
+            line-height: 0px;
+        }
+        .icon{
+            background-image: url(img/nublado.png);
+            width: 70px;
+            height: 70px;
+            background-repeat: no-repeat;  
+        }
+        .number{
+            font-size: 35px;
+        }
+        .f, .number, .icon{
+            display: inline-block;
+        }
+        .number, .f{
+            vertical-align: top;
+        }
+        .f{
+            margin-top: 6px;
+        }
+        .visual{
+            width: 50%;
+        }
+        .caracteristicas{
+            vertical-align: top;
+        }
+        .caracteristicas, .visual{
+            display: inline-block;
+            
+        }
+        .secun{
+            color: rgb(100, 100, 100);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="principal">
+        <div class="titulo">New York, NY</div>
+        <div class="info secun">
+            <p>Tuesday, April 15th</p>
+            <p>Overcast</p>
+        </div>
         <div class="tiempo">
             <div class="visual">
                 <div class="icon"></div>
-                <div class="number"></div>
-                <div class="F"></div>
+                <div class="number">58</div>
+                <div class="f">ºF</div>
             </div>
-            <div class="caracteristicas"></div>
+            <div class="caracteristicas info">
+                <p><span class="secun">Precipitation: </span>100%</p>
+                <p><span class="secun">Humidity: </span>97%</p>
+                <p><span class="secun">Wind: </span>4 mph SW</p>
+                <p><span class="secun">Pollen Cont: </span>36</p>
+            </div>
+                
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
