@@ -22,7 +22,6 @@
             line-height: 0px;
         }
         .icon{
-            background-image: url(img/nublado.png);
             width: 70px;
             height: 70px;
             background-repeat: no-repeat;  
@@ -52,6 +51,33 @@
         .secun{
             color: rgb(100, 100, 100);
         }
+        .dias{
+            /*border-bottom: 1px solid rgb(196, 196, 196);*/
+            padding: 10px;
+            display: inline-block;
+            left: left;
+
+        }
+        .min, .max{
+            display: inline-block;
+            left: left;
+        }
+        .nublado{
+            background-image: url(img/nublado.png);
+        }
+        .lluvia{
+            background-image: url(img/lluvia.png);
+        }
+        .sol{
+            background-image: url(img/sol.png);
+        }
+        .solNublado{
+            background-image: url(img/solNublado.png);
+        }
+        .tormenta{
+            background-image: url(img/tormenta.png);
+        }
+        
     </style>
 </head>
 
@@ -64,7 +90,7 @@
         </div>
         <div class="tiempo">
             <div class="visual">
-                <div class="icon"></div>
+                <div class="icon nublado"></div>
                 <div class="number">58</div>
                 <div class="f">ºF</div>
             </div>
@@ -75,6 +101,71 @@
                 <p><span class="secun">Pollen Cont: </span>36</p>
             </div>
                 
+        </div>
+        <div>
+            <div class="dias">
+                <div class="day">Today</div>
+                <div class="icon tormenta"></div>
+                <div class="temp">
+                    <div class="max">68º</div>
+                    <div class="min">36º</div>
+                </div>
+                <div class="pollen"><span class="secun">Pollen: </span>36</div>
+            </div>
+            <div class="dias">
+                <div class="day"></div>
+                <div class="icon sol"></div>
+                <div class="temp">
+                    <div class="max">50º</div>
+                    <div class="min">39º</div>
+                </div>
+                <div class="pollen"><span class="secun">Pollen: </span>36</div>
+            </div>
+            <div class="dias">
+                <div class="day"></div>
+                <div class="icon sol"></div>
+                <div class="temp">
+                    <div class="max">55º</div>
+                    <div class="min">39º</div>
+                </div>
+                <div class="pollen"><span class="secun">Pollen: </span>36</div>
+            </div>
+            <div class="dias">
+                <div class="day"></div>
+                <div class="icon solNublado"></div>
+                <div class="temp">
+                    <div class="max">54º</div>
+                    <div class="min">43º</div>
+                </div>
+                <div class="pollen"><span class="secun">Pollen: </span>36</div>
+            </div>
+            <div class="dias">
+                <div class="day"></div>
+                <div class="icon lluvia"></div>
+                <div class="temp">
+                    <div class="max">64º</div>
+                    <div class="min">46º</div>
+                </div>
+                <div class="pollen"><span class="secun">Pollen: </span>36</div>
+            </div>
+            <div class="dias">
+                <div class="day"></div>
+                <div class="icon lluvia"></div>
+                <div class="temp">
+                    <div class="max">64º</div>
+                    <div class="min">50º</div>
+                </div>
+                <div class="pollen"><span class="secun">Pollen: </span>36</div>
+            </div>
+            <div class="dias">
+                <div class="day"></div>
+                <div class="icon solNublado"></div>
+                <div class="temp">
+                    <div class="max">61º</div>
+                    <div class="min">50º</div>
+                </div>
+                <div class="pollen"><span class="secun">Pollen: </span>36</div>
+            </div>
         </div>
     </div>
 </body>
