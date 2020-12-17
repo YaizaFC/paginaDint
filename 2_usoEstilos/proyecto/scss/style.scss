@@ -1,0 +1,59 @@
+
+/*Creación de variables */
+$myFont: arial;
+
+/*Colores*/
+$myColor: rgb(17, 153, 46);
+$myColorHover: black;
+$myColorActive: blue;
+$bgNav: rgb(255, 245, 203);
+
+/*Fin colores*/
+
+$myFontSize: 18px;
+
+body{
+    font-family: $myFont;
+    font-size: $myFontSize;
+    color: $myColor;
+}
+
+/*estilos barra de navegación/menú*/
+
+nav{
+    font: {
+        family: Helvetica, sans-serif; // Esto equivale a lo que hay en el body pero yo lo quiero solo en el nav
+        size: 18px;
+        weight: bold;
+    }
+
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+    }
+    li{
+        display: inline-block;
+        border-right: 1px solid $myColor;
+    }
+    a{
+        text-decoration: none;
+        padding: 15px;
+        color: $myColor;
+    }
+    a:hover{
+        color: $myColorHover;
+    }
+}
+
+nav{
+    background-color: $bgNav;
+}
+
+body{
+    margin: 0;
+}
+.active{
+    color: $myColorActive;
+}
+
