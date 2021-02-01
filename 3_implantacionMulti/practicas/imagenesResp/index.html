@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGENES RESPONSIVE</title>
+    <link href="css/estilo.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="atras"><a href="../../index.html">ATRÁS</a></div> 
+    <h1>Mis imagenes</h1>
+    <div class="contenedor">
+        <div class="figuraVio">
+            <figure>
+                <picture>
+                    <source media="(min-width: 750px)" srcset="img/partitura_l_h.jpg 2x,
+                            img/partitura_l.jpg" />
+                    <source media="(min-width: 500px)" srcset="img/partitura_s_h.jpg," />
+                    <img src="img/partitura_s.jpg" alt="Partitura">
+                </picture>
+                <figcaption>Partitura</figcaption>
+            </figure>
+        </div>
+        <div class="figuraVio">
+            <p>
+                El objetivo es lograr que el navegador obtenga la versión de la imagen con las dimensiones más pequeñas
+                que
+                aún sea mayor que el tamaño de visualización final de la imagen. srcsetnos permite enumerar un conjunto
+                de
+                imágenes en diferentes resoluciones para que el navegador elija al buscar la imagen. La elección del
+                navegador depende de las dimensiones de la ventana gráfica, el tamaño de la imagen en relación con la
+                ventana gráfica, la densidad de píxeles del dispositivo del usuario y las dimensiones del archivo de
+                origen.
+            </p>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="figuraVio">
+            <p>
+                En la images/carpeta hay varias versiones de la imagen SFO, cada una con diferentes resoluciones. Los
+                enumeramos en el srcsetatributo para darle al navegador la opción de elegir qué archivo usar. Sin
+                embargo, el navegador no tiene forma de determinar el tamaño de los archivos antes de cargarlos, por lo
+                que siempre elige la primera imagen de la lista.
+            </p>
+        </div>
+        <div class="figuraVio">
+
+            <figure>
+                <picture>
+                    <source media="(min-width: 750px)" srcset="img/violoncelle_l.jpg" />
+                    <source media="(min-width: 500px)" srcset="img/violoncelle_s.jpg" />
+                    <img src="img/violoncelle_s.jpg" alt="Violonchelo">
+                </picture>
+                <figcaption>Violonchelo</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="botones">
+        <h1>Mi vídeo</h1>
+        <button onclick="playVideo();" class="btn btn-success">
+            Play <i class="glyphicon glyphicon-play"></i>
+        </button>
+        <button onclick="pauseVideo();" class="btn btn-warning">
+            Pause <i class="glyphicon glyphicon-pause"></i>
+        </button>
+        <button onclick="stopVideo()" class="btn btn-danger">
+            Stop <i class="glyphicon glyphicon-stop"></i>
+        </button>
+        <button onclick="rewindVideo();" class="btn btn-info">
+            Rewind <i class="glyphicon glyphicon-fast-backward"></i>
+        </button>
+    </div>
+
+    <div class="video">
+        <video poster="img/pixar.jpg" width="480" height="320" id="video">
+            <source src="img/jackjack.mp4" type="video/mp4">
+            <p>No se puede visualizar el video</p>
+            <track default kind="captions" srclang="es" src="subsEs.vtt" />
+        </video>
+    </div>
+
+    <script>
+        theVideo = document.querySelector("#video");
+
+        function playVideo() {
+            theVideo.play();
+        }
+
+        function pauseVideo() {
+            theVideo.pause();
+        }
+
+        function stopVideo() {
+            theVideo.currentTime = 0;
+            theVideo.pause();
+        }
+
+        function rewindVideo() {
+            theVideo.currentTime = 0;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+/*@media screen and (max-width: 700px) {
+    img#sfo {
+      max-width: 90vw;
+      width: 90vw;
+    }
+  }*/
+
+body {
+    background-color: rgb(255, 224, 207);
+    margin: 0px;
+    padding: 0px;
+    color: rgb(109, 64, 52);
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.atras {
+    text-align: center;
+    padding: 10px;
+    border: none;
+    background-color: rgb(197, 141, 125);
+    margin-bottom: 70px;
+}
+.atras a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+.atras:hover, .atras:hover a{
+    background-color: rgb(221, 187, 169);
+    color:black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.video {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.botones {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.botones button {
+    border: none;
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    background-color: rgba(109, 64, 52, 0.664);
+    color: white;
+    font-weight: bold;
+    border-radius: 40px;
+}
+
+.botones button:hover {
+    background-color: rgba(206, 156, 142, 0.664);
+    color: black;
+    box-shadow: 3px 2px 2px 3px rgba(109, 64, 52, 0.664);
+}
+
+.contenedor {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 70px;
+    margin: 5%;
+    border: 5px solid rgb(0, 20, 85);
+}
+
+.contenedor::after {
+    content: "Siguiente instrumento: ";
+    clear: both;
+    display: table;
+}
+
+img {
+    max-width: 100%;
+    /*display: inline;
+    float: left;*/
+    margin: 0px;
+}
+
+.figuraVio {
+    width: 100%;
+    display: inline;
+    float: left;
+}
+
+@media screen and (min-width: 600px) {
+    .figuraVio {
+        width: 40%;
+    }
+}
+
+.figuraVio p {
+    margin-top: 15px;
+}
