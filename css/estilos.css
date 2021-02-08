@@ -69,7 +69,7 @@ ul {
     height: 100%;
     overflow: auto;
     text-align: center;
-    overflow: hidden;
+    
 }
 
 .listaAmplia {
@@ -114,18 +114,13 @@ li a:hover:not(.active) {
     left: 0;
     bottom: 0;
     width: 100%;
+    display: flex;
 }
 
 .decorativo p {
     display: block;
 }
 
-.nombre {
-    font-size: 20px;
-    text-align: right;
-    margin-top: 100px !important;
-    margin-right: 300px !important;
-}
 
 .decorativo img {
     position: absolute;
@@ -133,8 +128,12 @@ li a:hover:not(.active) {
     height: 700px;
     width: 350px;
     bottom: 0px;
-    right: 150px;
-    display: block;
+    right: 120px;
+}
+
+
+.nombre {
+    float: right;
 }
 
 .sep1,
