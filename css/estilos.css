@@ -15,6 +15,14 @@ a {
     height: 30px;
     text-align: center;
     color: white;
+    padding: 5px;
+}
+
+#tituloPrincipal {
+    background-color: rgb(90, 102, 138);
+    padding: 10px;
+    text-align: center;
+    color: white;
 }
 
 #atras {
