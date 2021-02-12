@@ -52,6 +52,10 @@ fieldset {
     border-color: rgb(178, 126, 112);
 }
 
+.ultimoLi{
+    margin-bottom: 60px;
+}
+
 body {
     margin: 0;
     background-color: rgb(233, 239, 255);
