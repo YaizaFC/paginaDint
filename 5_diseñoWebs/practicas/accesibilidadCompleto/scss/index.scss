@@ -1,0 +1,464 @@
+    /*DEFINICION DE VARIABLES*/
+    
+    $bg-color: rgba(255, 237, 232, 0.349);
+    $bg-color-contenido: rgb(255, 237, 232);
+    $secundaryColor1: rgb(218, 218, 218);
+    $secundaryColor: white;
+    $primaryColor3: rgb(251, 218, 209);
+    $primaryColor2: rgba(109, 77, 68, 0.575);
+    $primaryColor1: rgb(178, 126, 112);
+    $primaryColor: rgb(109, 77, 68);
+    $colorHover: rgb(255, 236, 232);
+    $titleFont: 'Raleway', sans-serif !important;
+    $font: 'Raleway', sans-serif;
+    $fonta: 'Poppins', sans-serif !important;
+    $fontSizep: 18px;
+    $fontSizeh2: 35px;
+    $fontSizeh3: 30px;
+    $titleSize:34px;
+    $titleSize2:25px;
+    $menuSize:18px;
+    $menuSize2:14px;
+    $size:20px;
+    $buttonSize:35px;
+    $buttonSize2:20px;
+    /*COMIENZO CSS NORMAL APLICANDO VARIABLES*/
+    
+    body {
+        background-color: $bg-color;
+        margin: 0;
+        padding: 0;
+    }
+
+    p{
+        font-size: $fontSizep;
+    }
+    
+    nav {
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+        background-color: $primaryColor1;
+    }
+    
+    .titulo {
+        margin: 0px 30px 0px 30px;
+    }
+    
+    nav.fijo {
+        font-family: $titleFont;
+        font-size: $titleSize;
+        color: $secundaryColor;
+        padding-top: 100px;
+        top: 0px;
+    }
+    
+    .kanji {
+        height: 50px !important;
+        width: 50px !important;
+    }
+    
+    nav.noFijo {
+        font-family: $font;
+        font-size: $menuSize;
+        color: $secundaryColor !important;
+        position: fixed;
+        top: 0px;
+        background-color: $primaryColor2;
+    }
+    
+    .footer {
+        text-align: center;
+        width: 100%;
+        font-family: $font;
+        font-size: $menuSize;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        bottom: 0px;
+        background-color: $primaryColor3;
+        font-weight: bold;
+    }
+    
+    h1 {
+        margin: 0px;
+        text-align: center;
+    }
+
+    h2{
+        font-size: $fontSizeh2;
+    }
+
+    h3{
+        font-size: $fontSizeh3;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 60px;
+        display: inline;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: inline;
+        color: $secundaryColor;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: $fonta;
+        border-radius: 20px;
+    }
+    
+    li a:hover {
+        color: $colorHover;
+        box-shadow: 1px 1px 1px 1px $primaryColor2;
+    }
+    
+    .info {
+        max-width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        font-family: $font;
+        color: $primaryColor;
+    }
+    
+    .info2 {
+        text-align: center;
+        font-family: $font;
+        color: $primaryColor;
+        background-color: $secundaryColor1;
+        padding: 30px 450px 100px 450px;
+        font-style: italic;
+    }
+    
+    .info2 p {
+        margin-bottom: 50px;
+    }
+    
+    .centrar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .centrarHijo {
+        width: 70%;
+        padding: 50px;
+        background-color: $bg-color-contenido !important;
+    }
+    
+    .images {
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        font-family: $font;
+        color: $primaryColor;
+        font-style: italic;
+    }
+    /*Zona imagenes y quitando los datos por defecto*/
+    
+    figure {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    figcaption {
+        margin-top: 10px;
+    }
+    
+    .images .img {
+        float: left;
+        margin: 2%;
+    }
+    
+    .img img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    
+    .img img:hover {
+        box-shadow: 1px 4px 4px 4px $primaryColor2;
+    }
+    
+    .botones span {
+        background-color: $primaryColor1;
+        color: $secundaryColor;
+        padding: 12px;
+        border: none;
+        font-weight: bold;
+        border-radius: 100%;
+        font-size: $buttonSize;
+        margin: 10px;
+    }
+    
+    .botones span:hover {
+        background-color: $primaryColor;
+        box-shadow: 2px 2px 2px 1px $primaryColor2;
+    }
+    
+    .botones {
+        margin: 20px;
+    }
+    
+    video {
+        max-width: 100%;
+    }
+    
+    svg {
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 10px;
+        height: $buttonSize;
+        width: $buttonSize;
+    }
+    
+    svg:hover {
+        color: $secundaryColor;
+    }
+    
+    .video {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*SISTEMA DE REJILLAS*/
+    
+    @media screen and(max-width: 700px) {
+        .info2 {
+            //margin-top: 50px;
+            padding: 30px 20px 100px 20px;
+        }
+        nav.fijo {
+            font-size: $titleSize2;
+            color: $secundaryColor;
+            top: 0px;
+        }
+        .kanji {
+            height: 30px !important;
+            width: 30px !important;
+        }
+        nav.noFijo {
+            font-size: $menuSize2;
+        }
+        .botones span {
+            font-size: $buttonSize2;
+            margin: 5px;
+        }
+        svg {
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-top: 10px;
+            height: $buttonSize2;
+            width: $buttonSize2;
+        }
+        .footer {
+            font-size: $menuSize2;
+        }
+    }
+    
+    @media screen and(max-width: 1000px) {
+        .images {
+            display: inline-block;
+        }
+        .info2 {
+            //margin-top: 50px;
+            padding: 30px 20px 100px 20px;
+        }
+        nav.fijo {
+            font-size: $titleSize2;
+            color: $secundaryColor;
+            top: 0px;
+        }
+        .kanji {
+            height: 30px !important;
+            width: 30px !important;
+        }
+        nav.noFijo {
+            font-size: $menuSize2;
+        }
+        .botones span {
+            font-size: $buttonSize2;
+            margin: 5px;
+        }
+        svg {
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-top: 10px;
+            height: $buttonSize2;
+            width: $buttonSize2;
+        }
+        .footer {
+            font-size: $menuSize2;
+        }
+    }
+    
+    @media only screen and (max-width: 1200px) {
+        /* For tablets: */
+        .col-s-1 {
+            width: 8.33%;
+        }
+        .col-s-2 {
+            width: 16.66%;
+        }
+        .col-s-3 {
+            width: 25%;
+        }
+        .col-s-4 {
+            width: 33.33%;
+        }
+        .col-s-5 {
+            width: 41.66%;
+        }
+        .col-s-6 {
+            width: 50%;
+        }
+        .col-s-7 {
+            width: 58.33%;
+        }
+        .col-s-8 {
+            width: 66.66%;
+        }
+        .col-s-9 {
+            width: 75%;
+        }
+        .col-s-10 {
+            width: 83.33%;
+        }
+        .col-s-11 {
+            width: 91.66%;
+        }
+        .col-s-12 {
+            width: 100%;
+        }
+    }
+    
+    @media screen and(max-width: 1000px) {
+        .images {
+            display: inline-block;
+        }
+        .info2 {
+            //margin-top: 50px;
+            padding: 30px 20px 100px 20px;
+        }
+        nav.fijo {
+            font-size: $titleSize2;
+            color: $secundaryColor;
+            
+        }
+        .kanji {
+            height: 30px !important;
+            width: 30px !important;
+        }
+        nav.noFijo {
+            font-size: $menuSize2;
+        }
+        .botones span {
+            font-size: $buttonSize2;
+            margin: 5px;
+        }
+        svg {
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-top: 10px;
+            height: $buttonSize2;
+            width: $buttonSize2;
+        }
+        .footer {
+            font-size: $menuSize2;
+        }
+    }
+    
+    @media screen and(max-width: 1200px) {
+        .info2 {
+            //margin-top: 50px;
+            padding: 30px 40px 100px 40px;
+        }
+    }
+    
+    @media only screen and (max-width: 1200px) {
+        /* For tablets: */
+        .col-s-1 {
+            width: 8.33%;
+        }
+        .col-s-2 {
+            width: 16.66%;
+        }
+        .col-s-3 {
+            width: 25%;
+        }
+        .col-s-4 {
+            width: 33.33%;
+        }
+        .col-s-5 {
+            width: 41.66%;
+        }
+        .col-s-6 {
+            width: 50%;
+        }
+        .col-s-7 {
+            width: 58.33%;
+        }
+        .col-s-8 {
+            width: 66.66%;
+        }
+        .col-s-9 {
+            width: 75%;
+        }
+        .col-s-10 {
+            width: 83.33%;
+        }
+        .col-s-11 {
+            width: 91.66%;
+        }
+        .col-s-12 {
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (min-width: 1100px) {
+        /* For desktop: */
+        .col-1 {
+            width: 8.33%;
+        }
+        .col-2 {
+            width: 16.66%;
+        }
+        .col-3 {
+            width: 25%;
+        }
+        .col-4 {
+            width: 33.33%;
+        }
+        .col-5 {
+            width: 41.66%;
+        }
+        .col-6 {
+            width: 50%;
+        }
+        .col-7 {
+            width: 58.33%;
+        }
+        .col-8 {
+            width: 66.66%;
+        }
+        .col-9 {
+            width: 75%;
+        }
+        .col-10 {
+            width: 83.33%;
+        }
+        .col-11 {
+            width: 91.66%;
+        }
+        .col-12 {
+            width: 100%;
+        }
+    }
