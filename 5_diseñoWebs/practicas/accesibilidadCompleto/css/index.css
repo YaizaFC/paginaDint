@@ -1,18 +1,27 @@
 /*DEFINICION DE VARIABLES*/
 /*COMIENZO CSS NORMAL APLICANDO VARIABLES*/
 body {
-  background-color: rgba(255, 237, 232, 0.349);
+  background-color: rgba(255, 237, 232, 0.116);
   margin: 0;
   padding: 0;
 }
 
 p {
-  font-size: 18px;
+  font-size: 26px;
+  text-align: justify;
+  color: #363636 !important;
+  line-height: 1.8;
+}
+
+.imgDisc img {
+  height: 100px;
+  width: 100px;
+  padding: 20px;
 }
 
 nav {
   width: 100%;
-  padding: 20px 0px 20px 0px;
+  padding: 10px 0px 20px 0px;
   background-color: #b27e70;
 }
 
@@ -24,29 +33,28 @@ nav.fijo {
   font-family: "Raleway", sans-serif !important;
   font-size: 34px;
   color: white;
-  padding-top: 100px;
+  padding-top: 120px;
   top: 0px;
-}
-
-.kanji {
-  height: 50px !important;
-  width: 50px !important;
 }
 
 nav.noFijo {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 22px;
   color: white !important;
   position: fixed;
   top: 0px;
-  background-color: rgba(109, 77, 68, 0.575);
+  background-color: rgba(109, 77, 68, 0.692);
+}
+
+nav.noFijo ul {
+  list-style-type: none !important;
 }
 
 .footer {
   text-align: center;
   width: 100%;
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 22px;
   padding-top: 10px;
   padding-bottom: 10px;
   bottom: 0px;
@@ -57,22 +65,66 @@ nav.noFijo {
 h1 {
   margin: 0px;
   text-align: center;
+  font-size: 60px;
+}
+
+.inicial {
+  font-size: 34px;
+  color: white;
+  background-color: #616b8f;
+  padding: 1px 5px 1px 5px;
+  margin-right: 3px;
+}
+
+.pour {
+  margin-left: 70px;
+}
+
+.pour p {
+  line-height: 1.2 !important;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.importante {
+  background-color: rgba(97, 107, 143, 0.397);
+  padding: 2px;
+}
+
+.center {
+  text-align: center;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 50px;
 }
 
-h3 {
+h3, li.punto {
+  font-size: 40px;
+  color: #616b8f;
+  text-align: left;
+  font-weight: bold;
+}
+
+h4 {
   font-size: 30px;
+  margin-bottom: 0px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 60px;
-  display: inline;
+hr {
+  width: 100%;
+  border: 0.7px solid rgba(97, 107, 143, 0.397);
+  margin: 0px !important;
+}
+
+.detalleDisc {
+  margin-left: 100px;
+}
+
+.sep {
+  margin-bottom: 80px;
 }
 
 li {
@@ -92,12 +144,12 @@ li a {
 
 li a:hover {
   color: #ffece8;
-  box-shadow: 1px 1px 1px 1px rgba(109, 77, 68, 0.575);
+  box-shadow: 1px 1px 1px 1px rgba(109, 77, 68, 0.692);
 }
 
 .info {
   max-width: 100%;
-  margin-top: 50px;
+  margin-top: 10px;
   text-align: center;
   font-family: "Raleway", sans-serif;
   color: #6d4d44;
@@ -107,7 +159,7 @@ li a:hover {
   text-align: center;
   font-family: "Raleway", sans-serif;
   color: #6d4d44;
-  background-color: #dadada;
+  background-color: #e4e4e4;
   padding: 30px 450px 100px 450px;
   font-style: italic;
 }
@@ -123,9 +175,16 @@ li a:hover {
 }
 
 .centrarHijo {
-  width: 70%;
-  padding: 50px;
+  width: 50%;
+  padding-top: 30px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 50px;
   background-color: #ffede8 !important;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-left: 2px solid rgba(109, 77, 68, 0.692);
+  box-shadow: 3px 8px 8px 8px rgba(109, 77, 68, 0.692);
 }
 
 .images {
@@ -160,7 +219,7 @@ figcaption {
 }
 
 .img img:hover {
-  box-shadow: 1px 4px 4px 4px rgba(109, 77, 68, 0.575);
+  box-shadow: 1px 4px 4px 4px rgba(109, 77, 68, 0.692);
 }
 
 .botones span {
@@ -176,7 +235,7 @@ figcaption {
 
 .botones span:hover {
   background-color: #6d4d44;
-  box-shadow: 2px 2px 2px 1px rgba(109, 77, 68, 0.575);
+  box-shadow: 2px 2px 2px 1px rgba(109, 77, 68, 0.692);
 }
 
 .botones {

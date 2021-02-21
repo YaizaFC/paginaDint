@@ -1,23 +1,29 @@
     /*DEFINICION DE VARIABLES*/
     
-    $bg-color: rgba(255, 237, 232, 0.349);
+    $bg-color: rgba(255, 237, 232, 0.116);
     $bg-color-contenido: rgb(255, 237, 232);
-    $secundaryColor1: rgb(218, 218, 218);
+    $secundaryColor3: rgba(97, 107, 143, 0.397);
+    $secundaryColor2: rgb(97, 107, 143);
+    $secundaryColor1: rgb(228, 228, 228);
     $secundaryColor: white;
     $primaryColor3: rgb(251, 218, 209);
-    $primaryColor2: rgba(109, 77, 68, 0.575);
+    $primaryColor2: rgba(109, 77, 68, 0.692);
     $primaryColor1: rgb(178, 126, 112);
     $primaryColor: rgb(109, 77, 68);
     $colorHover: rgb(255, 236, 232);
+    $black: black;
+    $grey: rgb(54, 54, 54);
     $titleFont: 'Raleway', sans-serif !important;
     $font: 'Raleway', sans-serif;
     $fonta: 'Poppins', sans-serif !important;
-    $fontSizep: 18px;
-    $fontSizeh2: 35px;
-    $fontSizeh3: 30px;
+    $fontSizep: 26px;
+    $fontSizeh1: 60px;
+    $fontSizeh2: 50px;
+    $fontSizeh3: 40px;
+    $fontSizeh4: 30px;
     $titleSize:34px;
     $titleSize2:25px;
-    $menuSize:18px;
+    $menuSize:22px;
     $menuSize2:14px;
     $size:20px;
     $buttonSize:35px;
@@ -32,11 +38,20 @@
 
     p{
         font-size: $fontSizep;
+        text-align: justify;
+        color: $grey !important;
+        line-height: 1.8;
+    }
+
+    .imgDisc img{
+        height: 100px;
+        width: 100px;
+        padding: 20px;
     }
     
     nav {
         width: 100%;
-        padding: 20px 0px 20px 0px;
+        padding: 10px 0px 20px 0px;
         background-color: $primaryColor1;
     }
     
@@ -48,14 +63,10 @@
         font-family: $titleFont;
         font-size: $titleSize;
         color: $secundaryColor;
-        padding-top: 100px;
+        padding-top: 120px;
         top: 0px;
     }
     
-    .kanji {
-        height: 50px !important;
-        width: 50px !important;
-    }
     
     nav.noFijo {
         font-family: $font;
@@ -64,6 +75,9 @@
         position: fixed;
         top: 0px;
         background-color: $primaryColor2;
+    }
+    nav.noFijo ul{
+        list-style-type: none !important;
     }
     
     .footer {
@@ -81,22 +95,64 @@
     h1 {
         margin: 0px;
         text-align: center;
+        font-size: $fontSizeh1;
+    }
+
+    .inicial{
+        font-size: $titleSize;
+        color: $secundaryColor;
+        background-color: $secundaryColor2;
+        padding: 1px  5px 1px 5px;
+        margin-right: 3px;
+    }
+    .pour{
+        margin-left: 70px;
+    }
+
+    .pour p{
+        line-height: 1.2 !important;
+    }
+    .normal{
+        font-weight: normal;
+    }
+
+    .importante{
+        background-color: $secundaryColor3;
+        padding: 2px;
+    }
+    .center{
+        text-align: center;
     }
 
     h2{
         font-size: $fontSizeh2;
     }
 
-    h3{
+    h3, li.punto{
         font-size: $fontSizeh3;
+        color: $secundaryColor2;
+        text-align: left;
+        font-weight: bold;
     }
-    
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 60px;
-        display: inline;
+
+    h4{
+        font-size: $fontSizeh4;
+        margin-bottom: 0px;
+        //text-decoration:underline;
+    }
+
+    hr{
+        width: 100%;
+        border: 0.7px solid $secundaryColor3;
+        margin: 0px !important;
+    }
+
+    .detalleDisc{
+        margin-left: 100px;
+    }
+
+    .sep{
+        margin-bottom: 80px;
     }
     
     li {
@@ -121,7 +177,7 @@
     
     .info {
         max-width: 100%;
-        margin-top: 50px;
+        margin-top: 10px;
         text-align: center;
         font-family: $font;
         color: $primaryColor;
@@ -147,9 +203,16 @@
     }
     
     .centrarHijo {
-        width: 70%;
-        padding: 50px;
+        width: 50%;
+        padding-top: 30px;
+        padding-right: 100px;
+        padding-left: 100px;
+        padding-bottom: 50px;
         background-color: $bg-color-contenido !important;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        border-left: 2px solid $primaryColor2;
+        box-shadow: 3px 8px 8px 8px $primaryColor2;
     }
     
     .images {
