@@ -6,11 +6,17 @@ body {
   padding: 0;
 }
 
-p {
+label, p {
   font-size: 26px;
   text-align: justify;
   color: #363636 !important;
   line-height: 1.8;
+}
+
+figcaption {
+  font-size: 26px;
+  color: #363636 !important;
+  margin-bottom: 20px;
 }
 
 .imgDisc img {
@@ -29,12 +35,77 @@ nav {
   margin: 0px 30px 0px 30px;
 }
 
+.btnEjemplo {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 35px;
+  border: none;
+  background-color: #616b8f;
+  border-radius: 40px;
+  color: #ffede8;
+  font-weight: bolder;
+}
+
+.btnEjemplo:hover {
+  background-color: rgba(97, 107, 143, 0.288);
+  color: black;
+}
+
+.console {
+  font-family: "Inconsolata", monospace;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input {
+  padding: 5px;
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 30px;
+}
+
+.formulario {
+  width: 100%;
+  background-color: rgba(97, 107, 143, 0.288);
+  display: block;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.cuadroForm {
+  width: 70%;
+  text-align: left;
+  margin-bottom: 80px;
+}
+
 nav.fijo {
   font-family: "Raleway", sans-serif !important;
   font-size: 34px;
   color: white;
   padding-top: 120px;
   top: 0px;
+}
+
+.ejemplo {
+  font-size: 40px !important;
+  margin-left: 20px;
+}
+
+.inp1 {
+  width: 32%;
+}
+
+.inp2 {
+  width: 85%;
+}
+
+.btnEnviar {
+  font-size: 22px !important;
+  margin-bottom: 10px !important;
 }
 
 nav.noFijo {
@@ -89,7 +160,7 @@ h1 {
 }
 
 .importante {
-  background-color: rgba(97, 107, 143, 0.397);
+  background-color: rgba(97, 107, 143, 0.288);
   padding: 2px;
 }
 
@@ -115,7 +186,7 @@ h4 {
 
 hr {
   width: 100%;
-  border: 0.7px solid rgba(97, 107, 143, 0.397);
+  border: 0.7px solid rgba(97, 107, 143, 0.288);
   margin: 0px !important;
 }
 
@@ -188,7 +259,7 @@ li a:hover {
 }
 
 .images {
-  display: flex;
+  display: block;
   max-width: 100%;
   justify-content: center;
   align-items: center;
@@ -208,14 +279,11 @@ figcaption {
   margin-top: 10px;
 }
 
-.images .img {
-  float: left;
-  margin: 2%;
-}
-
 .img img {
-  max-width: 100%;
+  max-width: 90%;
   border-radius: 10px;
+  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .img img:hover {
@@ -240,6 +308,7 @@ figcaption {
 
 .botones {
   margin: 20px;
+  text-align: center;
 }
 
 video {
@@ -396,7 +465,7 @@ svg:hover {
 }
 @media screen and (max-width: 1000px) {
   .images {
-    display: inline-block;
+    display: block;
   }
 
   .info2 {

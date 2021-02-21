@@ -11,8 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+    <script src="recursos/jquery-3.5.1.js"></script>
 </head>
 
 <body>
@@ -128,7 +130,108 @@
                         <li class="punto">
                             <h3>Foco</h3>
                             <p>Importante para aquellos que tienen dificultades motrices. Se trata de crear cosas que
-                                puedan ser manejadas con teclado y no con mouse.</p>
+                                puedan ser manejadas con teclado y no con mouse. Una estrategia de foco bien
+                                implementada, brindara una mejor experiencia tanto a gente con discapacitades como a
+                                gente que simplemente navegen de forma más rápida y eficaz con el teclado.</p>
+                            <p>Puedes controlar el foco mediante las teclas <span class="importante console">Tab</span>,
+                                <span class="importante console">Shift+Tab</span> o
+                                las <span class="importante console">teclas de dirección</span>
+                            </p>
+                            <h4>Ejemplo con formulario</h4>
+                            <hr>
+                            <div class="centrar">
+                                <div class="cuadroForm">
+                                    <div>
+                                        <button class="btnEjemplo">Ver Ejemplo</button><span
+                                            class="material-icons ejemplo">border_color</span>
+                                    </div>
+                                    <div class="form formulario">
+                                        <form action="#">
+                                            <label for="nombre">Nombre:</label><input class="inp1" value="" type="text"
+                                                name="nombre" required>
+                                            <label for="apellidos">Apellidos:</label><input class="inp1" value=""
+                                                type="text" name="apellidos" required><br>
+                                            <label for="email">E-mail:</label><input value="" class="inp2" type="email"
+                                                size="60" name="email" placeholder="Escriba su email.." required>
+                                            <div class="centrar">
+                                                <button class="btnEjemplo btnEnviar">Enviar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>Ejemplo con imagenes</h4>
+                            <hr>
+                            <div class="centrar">
+                                <div class="cuadroForm">
+                                    <div>
+                                        <button class="btnEjemplo">Ver Ejemplo</button><span
+                                            class="material-icons ejemplo">border_color</span>
+                                    </div>
+                                    <div class="form">
+                                        <div id="images" class="images">
+                                            <div class="img col-12 col-s-12">
+                                                <figure>
+                                                    <picture>
+                                                        <source media="(min-width: 750px)" srcset="../../../img/boat1920.jpg" />
+                                                        <source media="(min-width: 500px)" srcset="../../../img/boat640.jpg" />
+                                                        <!--Menor calidad-->
+                                                        <img src="../../../img/boat640.jpg" alt="chef tokyo">
+                                                    </picture>
+                                                    <figcaption>Bote en un lago azul</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="img col-12 col-s-12">
+                                                <figure>
+                                                    <picture>
+                                                        <source media="(min-width: 750px)" srcset="../../../img/nature1920.jpg" />
+                                                        <source media="(min-width: 500px)" srcset="../../../img/nature640.jpg" />
+                                                        <!--Menor calidad-->
+                                                        <img src="../../../img/nature640.jpg" alt="calle tokyo">
+                                                    </picture>
+                                                    <figcaption>Paisaje con tormenta</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="img col-12 col-s-12">
+                                                <figure>
+                                                    <picture>
+                                                        <source media="(min-width: 750px)" srcset="../../../img/thunderstorm1920.jpg" />
+                                                        <source media="(min-width: 500px)" srcset="../../../img/thunderstorm640.jpg" />
+                                                        <!--Menor calidad-->
+                                                        <img src="../../../img/thunderstorm640.jpg" alt="templo tokyo">
+                                                    </picture>
+                                                    <figcaption>Nubes al anochecer</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>Ejemplo con Vídeo</h4>
+                            <hr>
+                            <div class="centrar">
+                                <div class="cuadroForm">
+                                    <div>
+                                        <button class="btnEjemplo">Ver Ejemplo</button><span
+                                            class="material-icons ejemplo">border_color</span>
+                                    </div>
+                                    <div class="form">
+                                        <div class="botones">
+                                            <span onclick="playVideo();" class="material-icons">play_circle</span>
+                                            <span onclick="pauseVideo();" class="material-icons">pause</span>
+                                            <span onclick="stopVideo()" class="material-icons">stop</span>
+                                            <span onclick="rewindVideo();" class="material-icons">fast_rewind</span>
+                                        </div>
+                                        <div class="video">
+                                            <video poster="../../../img/aguila.jpg" id="video">
+                                                <source src="../../../video/aguila.mp4" type="video/mp4">
+                                                <p>No se puede visualizar el video</p>
+                                                <track default kind="captions" srclang="es" src="subsEs.vtt" />
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="punto">
                             <h3>Semántica</h3>
@@ -136,77 +239,10 @@
                         </li>
                         <li class="punto">
                             <h3>Estilos</h3>
-                            <p>La accesibilidad en términos informáticos consiste en la facilidad que tiene un usuario
-                                cualquiera de navegar por nuestra página web. Cuando hablamos de cualquier usuario,
-                                debemos hacer foco sobre todo en aquellas personas que puedan tener mayores dificultades
-                                o
-                                discapacidades,
-                                pues no es lo mismo, desde luego, una discapacidad temporal de una fractura de un brazo,
-                                a una
-                                discapacidad. En el siguiente apartado se explicará brevemente donde podemos encontrar
-                                una mala accesibilidad y cómo podemos evitarlo.
-                                que no es temporar como pérdida de audición.</p>
+                            <p>Hacer que los elementos visuales de nuestro diseño sea lo más útil posible.</p>
                         </li>
                     </ol>
                 </div>
-            </div>
-        </div>
-        <!--<div id="images" class="images">
-                    <div class="img col-3 col-s-12">
-                        <figure>
-                            <picture>
-                                <source media="(min-width: 750px)" srcset="img/chef.jpg" />
-                                <source media="(min-width: 500px)" srcset="img/chef_l.jpg" />
-                                <!--Menor calidad
-                                <img src="img/chef_l.jpg" alt="chef tokyo">
-                            </picture>
-                            <figcaption>Cocina en Tokyo</figcaption>
-                        </figure>
-                    </div>
-                    <div class="img col-3 col-s-12">
-                        <figure>
-                            <picture>
-                                <source media="(min-width: 750px)" srcset="img/calle.jpg" />
-                                <source media="(min-width: 500px)" srcset="img/calle_l.jpg" />
-                                <!--Menor calidad
-                                <img src="img/calle_l.jpg" alt="calle tokyo">
-                            </picture>
-                            <figcaption>Visita sus calles principales</figcaption>
-                        </figure>
-                    </div>
-                    <div class="img col-3 col-s-12">
-                        <figure>
-                            <picture>
-                                <source media="(min-width: 750px)" srcset="img/templo.jpg" />
-                                <source media="(min-width: 500px)" srcset="img/templo_l.jpg" />
-                                <!--Menor calidad
-                                <img src="img/templo_l.jpg" alt="templo tokyo">
-                            </picture>
-                            <figcaption>Los templos más famosos</figcaption>
-                        </figure>
-                    </div>
-                </div>-->
-        </div>
-        </div>
-        <div id="ejemplos" class="info2">
-            <h1>Visita Tokyo</h1>
-            <div>
-                <div class="ejemplos"></div>
-                <div class="ejemplos"></div>
-                <div class="ejemplos"></div>
-            </div>
-            <div class="botones">
-                <span onclick="playVideo();" class="material-icons">play_circle</span>
-                <span onclick="pauseVideo();" class="material-icons">pause</span>
-                <span onclick="stopVideo()" class="material-icons">stop</span>
-                <span onclick="rewindVideo();" class="material-icons">fast_rewind</span>
-            </div>
-            <div class="video">
-                <video poster="img/posterTokyo.jpg" id="video">
-                    <source src="video/tokyo.mp4" type="video/mp4">
-                    <p>No se puede visualizar el video</p>
-                    <track default kind="captions" srclang="es" src="subsEs.vtt" />
-                </video>
             </div>
         </div>
     </main>
@@ -228,8 +264,13 @@
     </footer>
     <script>
         theVideo = document.querySelector("#video");
+        $("button.btnEjemplo").parent().next("div.form").hide();
 
-        //document.getElementById("video").play();
+        $(document).ready(function () {
+            $("button.btnEjemplo").click(function () {
+                $(this).parent().next("div.form").toggle("slow");
+            });
+        });
 
         function playVideo() {
             theVideo.play();
