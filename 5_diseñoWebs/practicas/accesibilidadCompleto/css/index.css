@@ -7,7 +7,7 @@ body {
 }
 
 label, p {
-  font-size: 26px;
+  font-size: 22px;
   text-align: justify;
   color: #363636 !important;
   line-height: 1.8;
@@ -20,7 +20,7 @@ label, p {
 }
 
 figcaption {
-  font-size: 26px;
+  font-size: 22px;
   color: #363636 !important;
   margin-bottom: 20px;
 }
@@ -73,7 +73,7 @@ label {
 
 input {
   padding: 5px;
-  font-size: 26px;
+  font-size: 22px;
   font-family: "Raleway", sans-serif;
   margin-bottom: 30px;
 }
@@ -98,7 +98,7 @@ input {
 
 nav.fijo {
   font-family: "Raleway", sans-serif !important;
-  font-size: 34px;
+  font-size: 32px;
   color: white;
   padding-top: 120px;
   top: 0px;
@@ -150,11 +150,11 @@ nav.noFijo ul {
 h1 {
   margin: 0px;
   text-align: center;
-  font-size: 60px;
+  font-size: 58px;
 }
 
 .inicial {
-  font-size: 34px;
+  font-size: 32px;
   color: white;
   background-color: #616b8f;
   padding: 1px 5px 1px 5px;
@@ -187,12 +187,12 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 48px;
   margin: 80px 0px 80px 0px;
 }
 
 h3, li.punto {
-  font-size: 40px;
+  font-size: 38px;
   color: #616b8f;
   text-align: left;
   font-weight: bold;
@@ -208,7 +208,7 @@ h3, li.punto {
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 0px;
   color: #616b8f;
   text-align: left;
@@ -400,7 +400,7 @@ video {
   }
 
   nav.fijo {
-    font-size: 25px;
+    font-size: 22px;
     color: white;
     top: 0px;
   }
@@ -441,7 +441,7 @@ video {
   }
 
   nav.fijo {
-    font-size: 25px;
+    font-size: 22px;
     color: white;
     top: 0px;
   }
@@ -532,7 +532,7 @@ video {
   }
 
   nav.fijo {
-    font-size: 25px;
+    font-size: 22px;
     color: white;
   }
 
