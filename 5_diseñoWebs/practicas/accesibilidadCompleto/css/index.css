@@ -110,11 +110,11 @@ nav.fijo {
 }
 
 .inp1 {
-  width: 37%;
+  width: 30%;
 }
 
 .inp2 {
-  width: 89%;
+  width: 75%;
 }
 
 .btnEnviar {
@@ -198,10 +198,18 @@ h3, li.punto {
   font-weight: bold;
 }
 
+.fuentes a {
+  margin-left: 100px;
+}
+
+.fuentesFin {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
 h4 {
   font-size: 30px;
   margin-bottom: 0px;
-  font-size: 40px;
   color: #616b8f;
   text-align: left;
 }
@@ -295,6 +303,14 @@ li a:hover {
 figure {
   margin: 0px;
   padding: 0px;
+}
+
+.urlHerr a {
+  color: #325eff;
+}
+
+.urlHerr a:hover {
+  color: #6d4d44;
 }
 
 figcaption {

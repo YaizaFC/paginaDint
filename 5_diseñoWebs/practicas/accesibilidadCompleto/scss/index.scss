@@ -2,10 +2,12 @@
     
     $bg-color: rgba(255, 237, 232, 0.116);
     $bg-color-contenido: rgb(255, 237, 232);
+    $secundaryColor4: rgb(50, 94, 255);
     $secundaryColor3: rgba(97, 107, 143, 0.288);
     $secundaryColor2: rgb(97, 107, 143);
     $secundaryColor1: rgb(228, 228, 228);
     $secundaryColor: white;
+    $primaryColor4: rgb(109, 77, 68);
     $primaryColor3: rgb(251, 218, 209);
     $primaryColor2: rgba(109, 77, 68, 0.692);
     $primaryColor1: rgb(178, 126, 112);
@@ -142,11 +144,11 @@
     }
 
     .inp1{
-        width: 37%;
+        width: 30%;
     }
 
     .inp2{
-        width: 89%;
+        width: 75%;
     }
 
     .btnEnviar{
@@ -227,10 +229,18 @@
         font-weight: bold;
     }
 
+    .fuentes a{
+        margin-left: 100px;
+    }
+
+    .fuentesFin{
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
     h4{
         font-size: $fontSizeh4;
         margin-bottom: 0px;
-        font-size: $fontSizeh3;
         color: $secundaryColor2;
         text-align: left;
         //text-decoration:underline;
@@ -325,6 +335,14 @@
     figure {
         margin: 0px;
         padding: 0px;
+    }
+
+    .urlHerr a{
+        color: $secundaryColor4;
+    }
+
+    .urlHerr a:hover{
+        color: $primaryColor4;
     }
     
     figcaption {
