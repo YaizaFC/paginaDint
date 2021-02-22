@@ -8,7 +8,7 @@
     <meta name="description" content="Documento con teoría y práctica de accesibilidad.">
     <title>Accesibilidad</title>
     <link href="css/index.css" rel="stylesheet">
-    <link rel="icon" href="../../../img/icono.png" type="image/png" />
+    <link rel="icon" href="../../../img/mono.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
@@ -26,8 +26,8 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#teoria">¿Qué es? (Teoría)</a></li>
                 <li><a href="#ejemplos">Ejemplos</a></li>
-                <li><a href="#evaluacion">Evaluación de la página</a></li>
                 <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="#evaluacion">Evaluación de la página</a></li>
             </ul>
         </nav>
         <nav class="fijo" id="inicio">
@@ -140,7 +140,8 @@
                                 ciertos usuarios con dichas dificultades de muchos productos.</p>
                         </li>
                     </ol>
-                    <h2 tabindex="0">Áreas tematicas principales para la creación de una página accesible</h2>
+                    <h2 tabindex="0" id="ejemplos">Áreas tematicas principales para la creación de una página accesible
+                    </h2>
                     <ol>
                         <li class="punto">
                             <h3 tabindex="0">Foco</h3>
@@ -173,6 +174,7 @@
                                             <label for="email">E-mail:</label><input tabindex="0" value="" class="inp2"
                                                 type="email" size="60" name="email" placeholder="Escriba su email.."
                                                 required>
+                                                
                                             <div class="centrar">
                                                 <button tabindex="0" class="btnEjemplo btnEnviar">Enviar</button>
                                             </div>
@@ -328,15 +330,68 @@
                         </li>
                     </ol>
 
-                    <h2 tabindex="0">Herramientas para facilitar el acceso a nuestra página</h2>
-                    <h3 tabindex="0">Lectores de pantalla</h4>
+                    <h2 tabindex="0"><span id="herramientas">Herramientas para facilitar el acceso a nuestra
+                            página</span></h2>
+                    <h3 tabindex="0">Lectores de pantalla</h3>
+                    <h4 tabindex="0">Extensiones/plugins</h4>
                     <hr />
-                    <p class="comoP importante puntoFin">Sreen Reader. Extensión del navegador Chrome.</p>
+                    <p tabindex="0" class="comoP importante urlHerr"><a
+                            href="https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn?hl=es">Sreen
+                            Reader.</a> Extensión del navegador Chrome.</p>
+                    <p tabindex="0" class="comoP puntoFin">Lector de pantalla para Chrome. Útil y fácil de usar.
+                        Construido solamente
+                        a partir de Javascript y HTML.</p>
+                    <p tabindex="0" class="comoP importante urlHerr"><a
+                            href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb">Accesibility
+                            Developer Tools</a>. Extensión/plugin de Chrome. </p>
+                    <p tabindex="0" class="comoP puntoFin"><span class="normal">(Deprecado)</span> Lector de pantalla
+                        para Chrome.
+                        Este plugin será eliminado en un futuro, pero es sustituido por las auditorías de accesibilidad
+                        integradas en el panel Lighthouse Audits en Chrome DevTools.</p>
 
-                    <h2 tabindex="0">Accesibilidad de esta página</h2>
-                    <h3 tabindex="0">Captura con la herramienta del navegador</h4>
+                    <h4 tabindex="0">Online</h4>
                     <hr />
-                    <img src="../../../img/capturaAcc.png" class="captura" alt="Captura de la Accesibilidad de esta página">
+                    <p tabindex="0" class="comoP importante urlHerr"><a
+                            href="http://www.sidar.org/#goto_a11yhoy">Sidar.</a>
+                        Herramienta Online.</p>
+                    <p tabindex="0" class="comoP puntoFin">Se trata de una aplicacion web en la que simplemente debes
+                        introducir la
+                        URL de tu página. Posteriormente, te dará información acerca de la accesibilidad de tu página.
+                    </p>
+                    <p tabindex="0" class="comoP importante urlHerr"><a
+                            href="https://tecnoaccesible.net/catalogo/hera">Hera</a>.
+                        Herramienta Online. </p>
+                    <p tabindex="0" class="comoP puntoFin">Hera es una utilidad que realiza un análisis automático
+                        previo de la
+                        accesibilidad de tu página e informa de los errores (si hay), de cómo solventarlos y de qué
+                        puntos deben ser revisados.</p>
+
+                    <h4 tabindex="0">Local</h4>
+                    <hr />
+                    <p tabindex="0" class="comoP importante urlHerr"><a
+                            href="https://squizlabs.github.io/HTML_CodeSniffer/">HTMLCodeSniffer.</a>
+                        Herramienta local.</p>
+                    <p tabindex="0" class="comoP puntoFin">Esta herramienta verifica el código de tu página mediante los
+                        estándares WCAG. Construido mediante Javascript.</p>
+
+
+                    <h2 tabindex="0" id="evaluacion">Accesibilidad de esta página</h2>
+                    <h4 tabindex="0">Captura con la herramienta del navegador</h4>
+                    <hr />
+                    <p tabindex="0" class="comoP">A continuación, se muestra una captura de la accesibilidad de esta
+                        página mediante la interfaz de chrome Lighthouse:</p>
+                    <img src="../../../img/capturaAcc.png" class="captura"
+                        alt="Captura de la Accesibilidad de esta página" />
+                    <div class="fuentesFin">
+                        <h3>Fuentes de la teoría:</h3>
+                        <p class="comoP urlHerr fuentes"><a
+                                href="https://developers.google.com/web/fundamentals/accessibility">Developers
+                                Google</a>
+                        </p>
+                        <p class="comoP urlHerr fuentes"><a
+                            href="https://webaim.org/standards/wcag/checklist">Estándares WCAG</a>
+                    </p>
+                    </div>
                 </div>
             </div>
         </div>
