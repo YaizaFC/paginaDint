@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documento con teoría y práctica de accesibilidad.">
     <title>Accesibilidad</title>
     <link href="css/index.css" rel="stylesheet">
     <link rel="icon" href="../../../img/icono.png" type="image/png" />
@@ -30,18 +31,19 @@
             </ul>
         </nav>
         <nav class="fijo" id="inicio">
-            <h1><span class="titulo">ACCESIBILIDAD</span></h1>
+            <h1><span class="titulo" tabindex="0">ACCESIBILIDAD</span></h1>
         </nav>
     </header>
     <main>
         <div class="centrar">
             <div class="centrarHijo">
                 <div id="teoria" class="info">
-                    <h2>Accesibilidad</h2>
+                    <h2 tabindex="0">Accesibilidad</h2>
                     <ol>
                         <li class="punto">
-                            <h3>¿Qué es?</h3>
-                            <p>La accesibilidad en términos informáticos consiste en la facilidad que tiene un usuario
+                            <h3 tabindex="0">¿Qué es?</h3>
+                            <p tabindex="0">La accesibilidad en términos informáticos consiste en la facilidad que tiene
+                                un usuario
                                 cualquiera de navegar por nuestra página web. Cuando hablamos de cualquier usuario,
                                 debemos hacer foco sobre todo en aquellas personas que puedan tener mayores dificultades
                                 o
@@ -50,169 +52,193 @@
                                 a una
                                 discapacidad. En el siguiente apartado se explicará brevemente donde podemos encontrar
                                 una mala accesibilidad y cómo podemos evitarlo.
-                                que no es temporar como pérdida de audición.</p>
+                                que no es temporal como pérdida de audición.</p>
                         </li>
                         <li class="punto">
-                            <h3>Conceptos básicos de accesibilidad. POUR.</h3>
-                            <p>Para entender de una forma más métodica, qué es la accesibilidad, tratamos con las Pautas
+                            <h3 tabindex="0">Conceptos básicos de accesibilidad. POUR.</h3>
+                            <p tabindex="0">Para entender de una forma más métodica, qué es la accesibilidad, tratamos
+                                con las Pautas
                                 de accesibilidad a contenido web (WCAG). Estas pautas constan de cuatro principios
                                 básicos, llamados con la palabra POUR:
                             </p>
                             <div class="pour">
                                 <!--Perceivable, Operable, Understandable, and Robust-->
-                                <p><span class="inicial">P</span>erceivable <span class="normal">(Perceptible): el
+                                <p tabindex="0"><span class="inicial">P</span>erceivable <span
+                                        class="normal">(Perceptible): el
                                         contenido debe ser percibido por todos los usuarios.</span></p>
-                                <p><span class="inicial">O</span>perable <span class="normal">(Manejable): nuestra
+                                <p tabindex="0"><span class="inicial">O</span>perable <span class="normal">(Manejable):
+                                        nuestra
                                         página se debe ser navegable por todos los usuarios.</span></p>
-                                <p><span class="inicial">U</span>nderstandable <span class="normal">(Comprensible): el
+                                <p tabindex="0"><span class="inicial">U</span>nderstandable <span
+                                        class="normal">(Comprensible): el
                                         contenido se debe entender, así como la interfaz para poder ser usada sin
                                         confusiones.</span></p>
-                                <p><span class="inicial">R</span>obust <span class="normal">(Sólido): una página que
+                                <p tabindex="0"><span class="inicial">R</span>obust <span class="normal">(Sólido): una
+                                        página que
                                         pueda ser consumida por una gran variedad de navegadores.</span></p>
                             </div>
                         </li>
                         <li class="punto">
-                            <h3>Diversidad de usuarios</h3>
-                            <p>A la hora de realizar una aplicacion web debemos tener en cuenta que nuestra página
+                            <h3 tabindex="0">Diversidad de usuarios</h3>
+                            <p tabindex="0">A la hora de realizar una aplicacion web debemos tener en cuenta que nuestra
+                                página
                                 llegará a una gran variedad de usuarios. Estos usuarios, pueden tener ciertas
                                 discapacidades, provocando que no puedan consumir el contenido de la página igual que
                                 otras personas.
                                 Las discapacidades que un usuario pueda tener se dividen prncipalmente en cuatro
                                 diferenciados grupos:
-                            <p class=" center"><span class="importante">visual, motriz, auditiva y cognitiva.</span></p>
+                            <p tabindex="0" class=" center"><span class="importante">visual, motriz, auditiva y
+                                    cognitiva.</span></p>
                             <span class="imgDisc centrar">
-                                <img src="../../../img/visual.png">
-                                <img src="../../../img/motriz.png">
-                                <img src="../../../img/auditiva.png">
-                                <img src="../../../img/cognitiva.png"></span>
+                                <img src="../../../img/visual.png" alt="Imagen de Discapacidad Visual">
+                                <img src="../../../img/motriz.png" alt="Imagen de Discapacidad Motriz">
+                                <img src="../../../img/auditiva.png" alt="Imagen de Discapacidad Auditiva">
+                                <img src="../../../img/cognitiva.png" alt="Imagen de Discapacidad Cognitiva">
+                            </span>
                             </p>
                             <div class="detalleDisc">
-                                <h4>Visual</h4>
+                                <h4 tabindex="0">Visual</h4>
                                 <hr>
-                                <p class="normal sep">La discapacidad visual puede variar según la pérdida de visión que
+                                <p class="normal sep" tabindex="0">La discapacidad visual puede variar según la pérdida
+                                    de visión que
                                     tengas. Existe
                                     gente
-                                    con mayor o menor visión y existe gente que no tienen ningún tipo de visión. Se usan
+                                    con mayor, menor visión o ningún tipo de visión. Se usan
                                     alternativas como lector de pantalla, braille, lupa de pantalla. etc.
                                 </p>
-                                <h4>Motriz</h4>
+                                <h4 tabindex="0">Motriz</h4>
                                 <hr>
-                                <p class="normal sep">Aquellas personas con dificultades físicas. Estos usuarios usan
+                                <p class="normal sep" tabindex="0">Aquellas personas con dificultades físicas. Estos
+                                    usuarios usan
                                     teclado, control de
                                     voz,
-                                    dispositivo de interrupción o una de rastreo ocular para interactuar con el
+                                    dispositivo de interrupción o uno de rastreo ocular para interactuar con el
                                     ordenador.
                                     Al igual que las discapacidades visuales éstas pueden ser temporales o
                                     circunstanciales.
                                 </p>
-                                <h4>Auditiva</h4>
+                                <h4 tabindex="0">Auditiva</h4>
                                 <hr>
-                                <p class="normal sep">Varían entre usuarios totalmente sordos o con dificultades
+                                <p class="normal sep" tabindex="0">Varían entre usuarios totalmente sordos o con
+                                    dificultades
                                     auditivas. Para este caso,
                                     existen ayudas como audífonos, subtítulos en los vídeos o transiciones.
                                 </p>
-                                <h4>Cognitiva</h4>
+                                <h4 tabindex="0">Cognitiva</h4>
                                 <hr>
-                                <p class="normal sep">Dentro de la gran variedad de afecciones cognitivas podemos
+                                <p class="normal sep" tabindex="0">Dentro de la gran variedad de afecciones cognitivas
+                                    podemos
                                     encontrar trastornos de
                                     déficit de atención o autismo. Los diseños mínimos pueden ayudar a estas personas a
                                     concentrarse en la lectura del contenido y a su vez, ayudan a la carga cognitiva.
                                 </p>
                             </div>
-                            <p class="sep">Es muy importante contar con una página accesible, en caso adverso,
+                            <p class="sep" tabindex="0">Es muy importante contar con una página accesible, en caso
+                                adverso,
                                 estariamos excluyendo
                                 a
                                 ciertos usuarios con dichas dificultades de muchos productos.</p>
                         </li>
                     </ol>
-                    <h2>Áreas tematicas principales para la creación de una página accesible</h2>
+                    <h2 tabindex="0">Áreas tematicas principales para la creación de una página accesible</h2>
                     <ol>
                         <li class="punto">
-                            <h3>Foco</h3>
-                            <p>Importante para aquellos que tienen dificultades motrices. Se trata de crear cosas que
+                            <h3 tabindex="0">Foco</h3>
+                            <p tabindex="0">Importante para aquellos que tienen dificultades motrices, problemas de
+                                tecnología o preferencia por uso de teclado. Se trata de crear
+                                cosas que
                                 puedan ser manejadas con teclado y no con mouse. Una estrategia de foco bien
                                 implementada, brindara una mejor experiencia tanto a gente con discapacitades como a
-                                gente que simplemente navegen de forma más rápida y eficaz con el teclado.</p>
-                            <p>Puedes controlar el foco mediante las teclas <span class="importante console">Tab</span>,
+                                gente que simplemente naveguen de forma más rápida y eficaz con el teclado.</p>
+                            <p tabindex="0">Puedes controlar el foco mediante las teclas <span
+                                    class="importante console">Tab</span>,
                                 <span class="importante console">Shift+Tab</span> o
                                 las <span class="importante console">teclas de dirección</span>
                             </p>
-                            <h4>Ejemplo con formulario</h4>
+                            <h4 tabindex="0">Ejemplo con formulario</h4>
                             <hr>
                             <div class="centrar">
                                 <div class="cuadroForm">
                                     <div>
-                                        <button class="btnEjemplo">Ver Ejemplo</button><span
+                                        <button tabindex="0" class="btnEjemplo">Ver Ejemplo</button><span
                                             class="material-icons ejemplo">border_color</span>
                                     </div>
                                     <div class="form formulario">
                                         <form action="#">
-                                            <label for="nombre">Nombre:</label><input class="inp1" value="" type="text"
-                                                name="nombre" required>
-                                            <label for="apellidos">Apellidos:</label><input class="inp1" value=""
-                                                type="text" name="apellidos" required><br>
-                                            <label for="email">E-mail:</label><input value="" class="inp2" type="email"
-                                                size="60" name="email" placeholder="Escriba su email.." required>
+                                            <label for="nombre">Nombre:</label><input tabindex="0" class="inp1" value=""
+                                                placeholder="Escriba su nombre.." type="text" name="nombre" required>
+                                            <label for="apellidos">Apellidos:</label><input tabindex="0" class="inp1"
+                                                placeholder="Escriba sus apellidos.." value="" type="text"
+                                                name="apellidos" required><br>
+                                            <label for="email">E-mail:</label><input tabindex="0" value="" class="inp2"
+                                                type="email" size="60" name="email" placeholder="Escriba su email.."
+                                                required>
                                             <div class="centrar">
-                                                <button class="btnEjemplo btnEnviar">Enviar</button>
+                                                <button tabindex="0" class="btnEjemplo btnEnviar">Enviar</button>
                                             </div>
                                         </form>
                                     </div>
                                 </div>
                             </div>
-                            <h4>Ejemplo con imagenes</h4>
+                            <h4 tabindex="0">Ejemplo con imagenes</h4>
                             <hr>
                             <div class="centrar">
                                 <div class="cuadroForm">
                                     <div>
-                                        <button class="btnEjemplo">Ver Ejemplo</button><span
+                                        <button tabindex="0" class="btnEjemplo">Ver Ejemplo</button><span
                                             class="material-icons ejemplo">border_color</span>
                                     </div>
-                                    <div class="form">
+                                    <div class="form centrar">
                                         <div id="images" class="images">
                                             <div class="img col-12 col-s-12">
                                                 <figure>
                                                     <picture>
-                                                        <source media="(min-width: 750px)" srcset="../../../img/boat1920.jpg" />
-                                                        <source media="(min-width: 500px)" srcset="../../../img/boat640.jpg" />
+                                                        <source media="(min-width: 750px)"
+                                                            srcset="../../../img/boat1920.jpg" />
+                                                        <source media="(min-width: 500px)"
+                                                            srcset="../../../img/boat640.jpg" />
                                                         <!--Menor calidad-->
                                                         <img src="../../../img/boat640.jpg" alt="chef tokyo">
                                                     </picture>
-                                                    <figcaption>Bote en un lago azul</figcaption>
+                                                    <figcaption tabindex="0">Bote en un lago azul</figcaption>
                                                 </figure>
                                             </div>
                                             <div class="img col-12 col-s-12">
                                                 <figure>
                                                     <picture>
-                                                        <source media="(min-width: 750px)" srcset="../../../img/nature1920.jpg" />
-                                                        <source media="(min-width: 500px)" srcset="../../../img/nature640.jpg" />
+                                                        <source media="(min-width: 750px)"
+                                                            srcset="../../../img/nature1920.jpg" />
+                                                        <source media="(min-width: 500px)"
+                                                            srcset="../../../img/nature640.jpg" />
                                                         <!--Menor calidad-->
                                                         <img src="../../../img/nature640.jpg" alt="calle tokyo">
                                                     </picture>
-                                                    <figcaption>Paisaje con tormenta</figcaption>
+                                                    <figcaption tabindex="0">Paisaje con tormenta</figcaption>
                                                 </figure>
                                             </div>
                                             <div class="img col-12 col-s-12">
                                                 <figure>
                                                     <picture>
-                                                        <source media="(min-width: 750px)" srcset="../../../img/thunderstorm1920.jpg" />
-                                                        <source media="(min-width: 500px)" srcset="../../../img/thunderstorm640.jpg" />
+                                                        <source media="(min-width: 750px)"
+                                                            srcset="../../../img/thunderstorm1920.jpg" />
+                                                        <source media="(min-width: 500px)"
+                                                            srcset="../../../img/thunderstorm640.jpg" />
                                                         <!--Menor calidad-->
                                                         <img src="../../../img/thunderstorm640.jpg" alt="templo tokyo">
                                                     </picture>
-                                                    <figcaption>Nubes al anochecer</figcaption>
+                                                    <figcaption tabindex="0">Nubes al anochecer</figcaption>
                                                 </figure>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <h4>Ejemplo con Vídeo</h4>
+                            <h4 tabindex="0">Ejemplo con Vídeo</h4>
                             <hr>
                             <div class="centrar">
-                                <div class="cuadroForm">
+                                <div class="cuadroForm videoGrande">
                                     <div>
-                                        <button class="btnEjemplo">Ver Ejemplo</button><span
+                                        <button tabindex="0" class="btnEjemplo">Ver Ejemplo</button><span
                                             class="material-icons ejemplo">border_color</span>
                                     </div>
                                     <div class="form">
@@ -225,7 +251,7 @@
                                         <div class="video">
                                             <video poster="../../../img/aguila.jpg" id="video">
                                                 <source src="../../../video/aguila.mp4" type="video/mp4">
-                                                <p>No se puede visualizar el video</p>
+                                                <p tabindex="0">No se puede visualizar el video</p>
                                                 <track default kind="captions" srclang="es" src="subsEs.vtt" />
                                             </video>
                                         </div>
@@ -235,32 +261,88 @@
                         </li>
                         <li class="punto">
                             <h3>Semántica</h3>
-                            <p>Mostrar la interfaz de usuario de forma sólida para distintas tecnologías.</p>
+                            <h3 tabindex="0">Estructura semántica</h3>
+                            <p tabindex="0">En este apartado, trataremos el termino de <span
+                                    class="importante">Tecnología asistencial</span>, pues son herramientas muy útiles a
+                                la hora de consumir una página, ayudando a cualquier persona con discapacidad. Pueden
+                                tratarse de lectores de pantalla, zoom en el navegador o cosas más específicas como
+                                controladores para una tarea determinada.
+                            </p>
+                            <p tabindex="0">Puede ser, tanto un dispositivo físico como un software, así como estar
+                                incorporado a un
+                                sistema operativo o simplemente tratarse de una extensión de un navegador.</p>
+                            <p tabindex="0">Para poder implementar bien estas tecnologías, es necesario que nuestra
+                                página tenga una
+                                semántica accesible que pueda permitir a los usuarios tener una experiencia positiva y
+                                sacar partido a estas herramientas.</p>
+                            <h3 tabindex="0">Semántica y ARIA</h3>
+                            <p tabindex="0">La estructura semántica es trabajo de como estructuremos nuestra página
+                                mediante el
+                                lenguaje HTML. Ahora veremos como expresar cada contenido, esta tarea ya no depende de
+                                la semántica que HTML nos ofrece. Para ello, existe <span
+                                    class="importante">WAI-ARIA</span> (Accessible Rich Internet Applications Suite),
+                                que
+                                nos ofrece especificaciones para mejorar la accesibilidad.</p>
+                            <p tabindex="0">WAI-ARIA nos ofrece distintos atributos con los que podremos dar roles a las
+                                etiquetas
+                                HTML. Cabe destacar que existen elementos HTML a los que no se le pueden indicar roles.
+                            </p>
+                            <p class="console informacion" tabindex="0">
+                                &lt;li tabindex="0" class="checkbox" <span class="importante">role="checkbox"
+                                    aria-checked="true"</span> checked>
+                                Receive promotional offers
+                                &lt;li&gt;
+                            </p>
+                            <p tabindex="0">Con WAI-ARIA, podrás:</p>
+                            <ol class="listaria" tabindex="0">
+                                <li class="aria">
+                                    <span class="comoP" tabindex="0">Añadir texto descriptivo a ciertos elementos.
+                                        Empleamos <span class="console" tabindex="0">aria-label</span> cuando existe en
+                                        algún elemento una
+                                        indicación visual y es importante aclarar la función de ésta.<br>
+                                        <p class="console center importante ancho100" tabindex="0">
+                                            aria-label="screen reader only label"
+                                        </p>
+                                </li>
+                                <li class="aria" tabindex="0">
+                                    <span class="comoP" tabindex="0">Poner función de región HTML a una
+                                        etiqueta.</span><br>
+                                    <p class="console center importante" tabindex="0">
+                                        role="scrollbar" aria-controls="main"
+                                    </p>
+                                </li>
+                                <li class="aria" tabindex="0">
+                                    <span class="comoP" tabindex="0">Indicar a la tecnología asistencial cuando una
+                                        información puede
+                                        cambiar.</span><br>
+                                    <p class="console center importante" tabindex="0">
+                                        aria-live="true"
+                                    </p>
+                                </li>
+                            </ol>
                         </li>
-                        <li class="punto">
-                            <h3>Estilos</h3>
-                            <p>Hacer que los elementos visuales de nuestro diseño sea lo más útil posible.</p>
+                        <li class="punto puntoFin">
+                            <h3 tabindex="0">Estilos</h3>
+                            <p tabindex="0">Hacer que los elementos visuales de nuestro diseño sea lo más útil posible.
+                            </p>
                         </li>
                     </ol>
+
+                    <h2 tabindex="0">Herramientas para facilitar el acceso a nuestra página</h2>
+                    <h3 tabindex="0">Lectores de pantalla</h4>
+                    <hr />
+                    <p class="comoP importante puntoFin">Sreen Reader. Extensión del navegador Chrome.</p>
+
+                    <h2 tabindex="0">Accesibilidad de esta página</h2>
+                    <h3 tabindex="0">Captura con la herramienta del navegador</h4>
+                    <hr />
+                    <img src="../../../img/capturaAcc.png" class="captura" alt="Captura de la Accesibilidad de esta página">
                 </div>
             </div>
         </div>
     </main>
     <footer id="foot" class="footer">
-        <h3>Nuestras redes sociales:
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                <path
-                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                <path
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                <path
-                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-            </svg>
-        </h3>
+        <p tabindex="0" class="pie">Diseño de Interfaces Web - DAW 2 - 2020/2021 - Yaiza Fritis Calvo</p>
     </footer>
     <script>
         theVideo = document.querySelector("#video");
@@ -269,6 +351,7 @@
         $(document).ready(function () {
             $("button.btnEjemplo").click(function () {
                 $(this).parent().next("div.form").toggle("slow");
+                theVideo.pause();
             });
         });
 
