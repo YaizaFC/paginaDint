@@ -275,6 +275,10 @@ li a:hover {
   align-items: center;
 }
 
+.herramientas {
+  clear: both !important;
+}
+
 .centrarHijo {
   width: 50%;
   padding-top: 50px;
