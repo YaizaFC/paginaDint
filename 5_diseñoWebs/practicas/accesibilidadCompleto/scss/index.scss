@@ -30,8 +30,8 @@
     $menuSize:22px;
     $menuSize2:14px;
     $size:20px;
-    $buttonSize:35px;
-    $buttonSize2:20px;
+    $buttonSize:25px;
+    $buttonSize2:18px;
 
     
     /*COMIENZO CSS NORMAL APLICANDO VARIABLES*/
@@ -50,7 +50,7 @@
         font-weight: bold;
     }
     .comoP{
-        font-size: 28px;
+        font-size: $fontSizep;
         color: $grey !important;
     }
 
